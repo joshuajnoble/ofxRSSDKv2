@@ -10,9 +10,12 @@
     <ClCompile Include="..\src\ofxRSSDKv2.cpp">
       <Filter>src\addons\ofxRSSDKv2</Filter>
     </ClCompile>
+<<<<<<< HEAD
     <ClCompile Include="..\src\RSHandData.cpp">
       <Filter>src\addons\ofxRSSDKv2</Filter>
     </ClCompile>
+=======
+>>>>>>> 3542ac5556c79d3ba3a7806714031b61a2406d61
   </ItemGroup>
   <ItemGroup>
     <Filter Include="src">
@@ -32,9 +35,12 @@
     <ClInclude Include="..\src\ofxRSSDKv2.h">
       <Filter>src\addons\ofxRSSDKv2</Filter>
     </ClInclude>
+<<<<<<< HEAD
     <ClInclude Include="..\src\RSHandData.h">
       <Filter>src\addons\ofxRSSDKv2</Filter>
     </ClInclude>
+=======
+>>>>>>> 3542ac5556c79d3ba3a7806714031b61a2406d61
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="icon.rc" />

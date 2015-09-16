@@ -19,13 +19,21 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>Unicode</CharacterSet>
+<<<<<<< HEAD
     <PlatformToolset>v120</PlatformToolset>
+=======
+    <PlatformToolset>v110</PlatformToolset>
+>>>>>>> 3542ac5556c79d3ba3a7806714031b61a2406d61
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>Unicode</CharacterSet>
     <WholeProgramOptimization>true</WholeProgramOptimization>
+<<<<<<< HEAD
     <PlatformToolset>v120</PlatformToolset>
+=======
+    <PlatformToolset>v110</PlatformToolset>
+>>>>>>> 3542ac5556c79d3ba3a7806714031b61a2406d61
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
@@ -64,7 +72,11 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
+<<<<<<< HEAD
       <AdditionalDependencies>libpxc_d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+=======
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+>>>>>>> 3542ac5556c79d3ba3a7806714031b61a2406d61
       <AdditionalLibraryDirectories>$(RSSDK_DIR)\Lib\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>

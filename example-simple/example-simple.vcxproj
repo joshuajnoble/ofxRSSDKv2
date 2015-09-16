@@ -19,13 +19,21 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>Unicode</CharacterSet>
+<<<<<<< HEAD
     <PlatformToolset>v120</PlatformToolset>
+=======
+    <PlatformToolset>v110</PlatformToolset>
+>>>>>>> 3542ac5556c79d3ba3a7806714031b61a2406d61
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>Unicode</CharacterSet>
     <WholeProgramOptimization>true</WholeProgramOptimization>
+<<<<<<< HEAD
     <PlatformToolset>v120</PlatformToolset>
+=======
+    <PlatformToolset>v110</PlatformToolset>
+>>>>>>> 3542ac5556c79d3ba3a7806714031b61a2406d61
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
@@ -90,13 +98,19 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\src\ofxRSSDKv2.cpp" />
+<<<<<<< HEAD
     <ClCompile Include="..\src\RSHandData.cpp" />
+=======
+>>>>>>> 3542ac5556c79d3ba3a7806714031b61a2406d61
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\ofApp.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\src\ofxRSSDKv2.h" />
+<<<<<<< HEAD
     <ClInclude Include="..\src\RSHandData.h" />
+=======
+>>>>>>> 3542ac5556c79d3ba3a7806714031b61a2406d61
     <ClInclude Include="src\ofApp.h" />
   </ItemGroup>
   <ItemGroup>
