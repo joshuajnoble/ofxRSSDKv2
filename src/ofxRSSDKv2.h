@@ -12,14 +12,12 @@
 #include "pxcblobmodule.h"
 #include "pxcfacemodule.h"
 #include "pxcfaceconfiguration.h"
-<<<<<<< HEAD
+
 #include "pxchandconfiguration.h"
 #include "RSHandData.h"
 
 #define MAX_NUMBER_OF_HANDS 2
 #define MAX_NUMBER_OF_JOINTS 22
-=======
->>>>>>> 3542ac5556c79d3ba3a7806714031b61a2406d61
 
 using namespace std;
 
@@ -74,12 +72,8 @@ namespace ofxRSSDK
 		bool enableFaceTracking(bool pUseDepth);
 		bool enableBlobTracking();
 
-<<<<<<< HEAD
 		bool enableHandTracking();
 
-
-=======
->>>>>>> 3542ac5556c79d3ba3a7806714031b61a2406d61
 		void setPointCloudRange(float pMin, float pMax);
 
 		bool start();
@@ -129,19 +123,16 @@ namespace ofxRSSDK
 		const int		getRgbWidth() { return mRgbSize.x; }
 		const int		getRgbHeight() { return mRgbSize.y; }
 
-<<<<<<< HEAD
+
 		RSHandData&		getHandData();
 
-=======
->>>>>>> 3542ac5556c79d3ba3a7806714031b61a2406d61
 	private:
 		void			updatePointCloud();
 		void			updateFaces();
 		void			updateBlobs();
-<<<<<<< HEAD
+
 		void			updateHands();
-=======
->>>>>>> 3542ac5556c79d3ba3a7806714031b61a2406d61
+
 
 		bool			mIsInit,
 						mIsRunning,
@@ -151,12 +142,8 @@ namespace ofxRSSDK
 						mShouldGetDepthAsColor,
 						mShouldGetPointCloud,
 						mShouldGetFaces,
-<<<<<<< HEAD
 						mShouldGetBlobs,
 						mShouldGetHands;
-=======
-						mShouldGetBlobs;
->>>>>>> 3542ac5556c79d3ba3a7806714031b61a2406d61
 
 		AlignMode		mAlignMode;
 		CloudRes		mCloudRes;
@@ -176,7 +163,6 @@ namespace ofxRSSDK
 
 		PXCBlobModule		*mBlobTracker;
 		PXCFaceModule		*mFaceTracker;
-<<<<<<< HEAD
 		PXCHandModule 		*mHandTracker;
 		PXCHandData			*mHandData;
 
@@ -184,8 +170,7 @@ namespace ofxRSSDK
 
 		bool				mHasRightHand;
 		bool				mHasLeftHand;
-=======
->>>>>>> 3542ac5556c79d3ba3a7806714031b61a2406d61
+
 
 		vector<PXCPoint3DF32>	mInPoints3D;
 		vector<PXCPoint3DF32>	mOutPoints3D;

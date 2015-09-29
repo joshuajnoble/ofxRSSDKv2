@@ -99,14 +99,8 @@ namespace ofxRSSDK
 
 	bool RSDevice::start()
 	{
-<<<<<<< HEAD
 
-		pxcStatus cStatus;
-		cStatus = mSenseMgr->Init();//pxcStatus cStatus = mSenseMgr->Init();
-
-=======
 		pxcStatus cStatus = mSenseMgr->Init();
->>>>>>> 3542ac5556c79d3ba3a7806714031b61a2406d61
 		if (cStatus >= PXC_STATUS_NO_ERROR)
 		{
 			mCoordinateMapper = mSenseMgr->QueryCaptureManager()->QueryDevice()->CreateProjection();
@@ -127,10 +121,7 @@ namespace ofxRSSDK
 		if (mSenseMgr)
 		{
 			cStatus = mSenseMgr->AcquireFrame(false,0);
-<<<<<<< HEAD
-			//cStatus = mSenseMgr->AcquireFrame(true);
-=======
->>>>>>> 3542ac5556c79d3ba3a7806714031b61a2406d61
+
 			if (cStatus < PXC_STATUS_NO_ERROR)
 				return false;
 			PXCCapture::Sample *mCurrentSample = mSenseMgr->QuerySample();
@@ -192,7 +183,7 @@ namespace ofxRSSDK
 					updatePointCloud();
 				}
 
-<<<<<<< HEAD
+
 				if (mShouldGetHands)
 				{
 					const PXCCapture::Sample *sample = mSenseMgr->QueryHandSample();
@@ -202,8 +193,8 @@ namespace ofxRSSDK
 					}
 				}
 
-=======
->>>>>>> 3542ac5556c79d3ba3a7806714031b61a2406d61
+
+
 				if (!mHasRgb)
 				{
 					mSenseMgr->ReleaseFrame();
@@ -266,14 +257,14 @@ namespace ofxRSSDK
 				if(mFaceTracker)
 					mFaceTracker->Release();
 			}
-<<<<<<< HEAD
+
 			if (mShouldGetHands)
 			{
 				if (mHandTracker)
 					mHandTracker->Release();
 			}
-=======
->>>>>>> 3542ac5556c79d3ba3a7806714031b61a2406d61
+
+
 			return true;
 		}
 		delete [] mRawDepth;
@@ -281,7 +272,7 @@ namespace ofxRSSDK
 	}
 
 #pragma region Enable
-<<<<<<< HEAD
+
 
 	bool RSDevice::enableHandTracking()
 	{
@@ -319,9 +310,7 @@ namespace ofxRSSDK
 	}
 	
 	bool RSDevice::enableFaceTracking(bool pUseDepth)
-=======
-		bool RSDevice::enableFaceTracking(bool pUseDepth)
->>>>>>> 3542ac5556c79d3ba3a7806714031b61a2406d61
+
 		{
 			if(mSenseMgr)
 			{
@@ -401,7 +390,7 @@ namespace ofxRSSDK
 			mPointCloud.push_back(ofVec3f(p.x, p.y, p.z));
 		}
 	}
-<<<<<<< HEAD
+
 
 	void RSDevice::updateHands()
 	{
@@ -433,8 +422,8 @@ namespace ofxRSSDK
 		mRSHandData.setNodes(mHandData);
 
 	}
-=======
->>>>>>> 3542ac5556c79d3ba3a7806714031b61a2406d61
+
+
 #pragma endregion
 
 #pragma region Getters
@@ -636,13 +625,13 @@ namespace ofxRSSDK
 	{
 		return getColorCoordsFromDepthSpace(pCameraPoint.x, pCameraPoint.y, pCameraPoint.z);
 	}
-<<<<<<< HEAD
+
 
 	RSHandData& RSDevice::getHandData()
 	{
 		return mRSHandData;
 	}
-=======
->>>>>>> 3542ac5556c79d3ba3a7806714031b61a2406d61
+
+
 }
 #pragma endregion
